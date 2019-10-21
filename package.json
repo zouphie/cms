@@ -1,0 +1,34 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "Demo-Wordpress-Seite im Rahmen der LV 'Content Management Systeme' an der FH Salzburg von Sophie Daringer und Simon Seebacher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophieDaringer/cms.git"
+  },
+  "author": "Sophie Daringer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SophieDaringer/cms/issues"
+  },
+  "homepage": "https://github.com/SophieDaringer/cms#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {}
+}
