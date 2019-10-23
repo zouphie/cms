@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap" rel="stylesheet">
     <title>Alex Mayer</title>
 </head>
+
 <body>
     <header>
-        <h1>Alex Mayer</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Leistungen</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Über mich</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div>
-            <p>Glänzende Ideen für leuchtende Augen</p>
-            <button>Angebot einholen</button>
+        <div id="navbar">
+            <h1>Alex Mayer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Leistungen</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Über mich</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="hero">
+            <div class="container">
+                <p><span class="white-bg">Glänzende Ideen für leuchtende Augen</span></p>
+                <button>
+                    <a href="#">Angebot einholen</a>
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <section id="services">
             <h2>Leistungen</h2>
             <ul>
-                <li>Design</li>
-                <li>Strategie</li>
-                <li>Consulting</li>
+                <li class="yellow-bg">
+                    <p>Design</p>
+                    <img src="images/design.svg" alt="Illustration of a brush and a pencil">
+                </li>
+                <li class="blue-bg">
+                    <p>Strategie</p>
+                    <img src="images/strategy.svg" alt="Illustration of a redar">
+                </li>
+                <li class="green-bg">
+                    <p>Consulting</p>
+                    <img src="images/consulting.svg" alt="Illustration of a lightbulb">
+                </li>
             </ul>
         </section>
         <section id="news">
             <h2>News</h2>
             <ul>
-                <li><span>365 Postkarten</span> - Eine Liebeserklärung für jeden Tag! <a href="#">[mehr erfahren]</a></li>
-                <li><span>Award-Nominierung</span> - Tolle News: ich bin bei der Endauswahl 2018! <a href="#">[mehr erfahren]</a></li>
-                <li><span>CMYK erklärt</span> - der neueste <a href="#">Blog</a>-Eintrag! <a href="#">[mehr erfahren]</a></li>
+                <li><span>365 Postkarten</span> - Eine Liebeserklärung für jeden Tag! <a href="#">[mehr erfahren]</a>
+                </li>
+                <li><span>Award-Nominierung</span> - Tolle News: ich bin bei der Endauswahl 2018! <a href="#">[mehr
+                        erfahren]</a></li>
+                <li><span>CMYK erklärt</span> - der neueste <a href="#">Blog</a>-Eintrag! <a href="#">[mehr
+                        erfahren]</a></li>
             </ul>
         </section>
         <section id="references">
@@ -46,7 +67,7 @@
                 <img src="./images/Dina_Meyer.jpg" alt="Tina Ubuntu">
                 <cite>Tina Ubuntu, CEO headless Ltd.</cite>
                 <blockquote>
-                    <p>Alex' Redesign hat maßgeblich mitgeholfen unseren Umsatz um 20% in die Höhe zu treiben!     
+                    <p>Alex' Redesign hat maßgeblich mitgeholfen unseren Umsatz um 20% in die Höhe zu treiben!
                 </blockquote>
                 <img src="./images/Thomas_Meyer-Hermann_1.jpg" alt="Tom Herzog">
                 <cite>Tom Herzog, Cutter's Finest</cite>
@@ -67,15 +88,21 @@
             <a href="#">Impressum</a>
             <a href="#">Datenschutzerklärung</a>
         </div>
-        <p>Demo-Wordpress-Seite im Rahmen der LV 'Content Management Systeme' an der FH Salzburg von Sophie Daringer und Simon Seebacher</p>
+        <p>Demo-Wordpress-Seite im Rahmen der LV 'Content Management Systeme' an der FH Salzburg von Sophie Daringer und
+            Simon Seebacher</p>
         <p>Alle Inhalte frei erfunden</p>
         <p>Bildnachweis:</p>
         <p>Fotos</p>
         <ul>
             <li>Herofoto Tastatur: Aman Anderson, https://de.freeimages.com/photo/illuminated-keyboard-1242287</li>
-            <li>Foto Dina Meyer by Dreifachaxel [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)] from Wikimedia Commons</li>
-            <li>Foto Thomas Meyer-Hermann By Thomas Meyer-Hermann (Thomas Meyer-Hermann) [FGDL (http://www.gnu.org/copyleft/fdl.html), CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) or CC BY-SA 3.0 de (https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)], via Wikimedia Commons https://upload.wikimedia.org/wikipedia/commons/c/c6/Thomas_Meyer-Hermann_1.jpg</li>
-            <li>Foto Vorstand Sparkasse Ülzen [[File:SKUelzen Vorstand 2015.jpg|SKUelzen Vorstand 2015]] https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg</li>
+            <li>Foto Dina Meyer by Dreifachaxel [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)] from
+                Wikimedia Commons</li>
+            <li>Foto Thomas Meyer-Hermann By Thomas Meyer-Hermann (Thomas Meyer-Hermann) [FGDL
+                (http://www.gnu.org/copyleft/fdl.html), CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) or
+                CC BY-SA 3.0 de (https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)], via Wikimedia Commons
+                https://upload.wikimedia.org/wikipedia/commons/c/c6/Thomas_Meyer-Hermann_1.jpg</li>
+            <li>Foto Vorstand Sparkasse Ülzen [[File:SKUelzen Vorstand 2015.jpg|SKUelzen Vorstand 2015]]
+                https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg</li>
         </ul>
         <p>Icons</p>
         <ul>
@@ -83,4 +110,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

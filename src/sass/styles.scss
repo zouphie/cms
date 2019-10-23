@@ -1,0 +1,140 @@
+@import "_normalize.css";
+
+$highlight: #00aeff;
+$dark: black;
+$light: white;
+$green: #4CAF50;
+
+%max-width-container {
+    max-width: 80ch;
+}
+
+// --------------------------
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.white-bg {
+    background-color: $light;
+}
+
+.yellow-bg {
+    background-color: #f7f0b9;
+}
+
+.blue-bg {
+    background-color: #ace2fc;
+}
+
+.green-bg {
+    background-color: #8eb395;
+}
+
+// --------- Header -----------
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin: 0;
+    color: $highlight;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: $light;
+    align-items: center;
+
+    ul {
+        display: flex;
+        margin: 0;
+    }
+
+    a {
+        padding: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+            color: $highlight;
+        }
+    }
+}
+
+#hero {
+    background-image: url("../images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    p {
+        color: $highlight;
+        font-size: 2.5rem;
+        max-width: 15ch;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 2rem 1rem 0.5rem 0;
+    }
+
+    button {
+        background-color: $green;
+        border: none;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 1rem 0;
+        margin: 0 0 2rem;
+    }
+
+    a {
+        color: white;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+// --------- Main -----------
+
+h2 {
+    color: $highlight;
+    font-size: 1.5rem;
+}
+
+main {
+    section {
+        @extend %max-width-container;
+        margin: 3rem auto;
+    }
+}
+
+#services {
+    ul {
+        display: flex;
+    }
+
+    li {
+        display: block;
+
+    }
+}
