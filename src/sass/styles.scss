@@ -226,6 +226,28 @@ main {
     }
 }
 
+@media screen and (max-width: $phone-width) {
+    #services {
+    
+        ul {
+            flex-direction: column;
+        }
+
+        li {    
+            margin: 1rem;
+
+            &:first-child {
+                margin-left: 1rem;
+            }
+    
+            &:last-child {
+                margin-right: 1rem;
+            }
+        }
+        
+    }
+}
+
 #news {
 
     ul {
