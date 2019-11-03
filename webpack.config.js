@@ -40,7 +40,7 @@ module.exports = {
       inject: true
     }),
     new MiniCssExtractPlugin({
-      filename: './styles.css'
+      filename: './main.css'
     }),
   ]
 };

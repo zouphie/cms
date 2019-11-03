@@ -1,4 +1,4 @@
-import "./sass/styles.scss";
+import "./sass/main.scss";
 
 const nav = document.querySelector("header nav");
 const burger = document.querySelector(".burger");

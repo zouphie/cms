@@ -1,0 +1,118 @@
+// --------- Header -----------
+$highlight: #00b9f2;
+$dark: black;
+$light: white;
+$green: #4CAF50;
+$tablet-width: 1000px;
+$phone-width: 500px;
+
+$default-radius: 5px;
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin: 0;
+    color: $highlight;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: $light;
+    align-items: center;
+
+    ul {
+        display: flex;
+        margin: 0;
+    }
+
+    a {
+        padding: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+            color: $highlight;
+        }
+    }
+}
+
+#hero {
+
+    background-image: url("../images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
+
+    .outer-container {
+        @extend .max-width-container;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .inner-container {
+       max-width: 15ch;
+       font-size: 2.5rem;
+    }
+
+    p {
+        color: $highlight;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 2rem 1rem 0.5rem 0;
+    }
+
+    button {
+        background-color: $green;
+        border: none;
+        border-radius: $default-radius;
+        font-size: 1.5rem;
+        width: fit-content;
+        padding: 1rem;
+        margin: 0 0 2rem;
+        color: $light;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .burger {
+
+        display: block;
+        z-index: 100;
+
+        &:hover {
+            cursor: pointer;
+        }
+    
+        div div {
+            width: 25px;
+            height: 2px;
+            background: $dark;
+            margin: 5px;
+            
+        }
+    }
+
+    header nav {
+        display: none;
+
+        &.nav-active {
+            display: block;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            left: 0px;
+
+            ul {
+                flex-direction: column;
+                background: $light;
+                height: 20rem;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+}
