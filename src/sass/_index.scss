@@ -22,34 +22,11 @@ $default-radius: 5px;
     // height: 100%;
 }
 
-.max-width-container {
-    max-width: 80ch;
-    margin: 0 auto;
-}
-
-// --------------------------
-
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.25em;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
+#index {
+    #hero {
+    background-image: url("../images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
+    }
 }
 
 .white-bg {
@@ -71,8 +48,6 @@ ul {
 .highlight {
     color: $highlight;
 }
-
-// --------- Index -----------
 
 h2 {
     color: $highlight;

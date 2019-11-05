@@ -9,7 +9,7 @@ $phone-width: 500px;
 $default-radius: 5px;
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 350;
     padding: 0.5rem;
     margin: 0;
@@ -37,10 +37,9 @@ h1 {
     }
 }
 
-#hero {
 
-    background-image: url("../images/illuminated-keyboard-1242287.jpg");
-    background-size: cover;
+
+#hero {
 
     .outer-container {
         @extend .max-width-container;

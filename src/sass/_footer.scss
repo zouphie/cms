@@ -37,5 +37,24 @@ footer {
             align-self: center;
             font-size: 20px;
         }
+
+        .daten {
+            padding-left: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .footer-menu {
+        flex-direction: column;
+        justify-content: start;
+
+        p {
+            margin: 5px;
+        }
+
+        ul {
+            margin: 5px;
+        }
     }
 }
