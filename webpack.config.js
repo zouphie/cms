@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.(html)$/,
-        include: [path.resolve(__dirname, 'src/partials'), path.resolve(__dirname, 'src/images')],
+        include: [path.resolve(__dirname, 'src/partials')],
         use: {
           loader: 'html-loader'
         }
