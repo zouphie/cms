@@ -28,17 +28,30 @@ module.exports = {
       },
       {
         test: /\.(html)$/,
+        include: [path.resolve(__dirname, 'src/partials')],
         use: {
           loader: 'html-loader'
         }
       }
+      // {
+      //   test: /_.*.html$/,
+      //   include: [path.resolve(__dirname, 'src/partials')],
+      //   use: [{
+      //     loader: 'html-loader'
+      //   }]
+      // }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: './src/index.html',
       inject: true
     }),
+    // new HtmlWebpackPlugin({
+    //   template: './about.html',
+    //   filename: 'about.html',
+    //   inject: true
+    // }),
     new MiniCssExtractPlugin({
       filename: './main.css'
     }),

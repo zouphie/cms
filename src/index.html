@@ -1,151 +1,76 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap" rel="stylesheet">
-    <title>Alex Mayer</title>
-</head>
-
-<body>
-    <header>
-        <div id="navbar">
-            <h1>Alex Mayer</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">Leistungen</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Über mich</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
-            <div class="burger">
-                <div>
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-        </div>
-        <div id="hero">
-            <div class="outer-container">
-                <div class="inner-container">
-                    <p><span class="white-bg">Glänzende Ideen für leuchtende Augen</span></p>
-                    <button>Angebot einholen</button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="services">
-            <h2>Leistungen</h2>
-            <ul>
-                <li class="yellow-bg">
-                    <p>Design</p>
-                    <img src="images/design.svg" alt="Illustration of a brush and a pencil.">
-                </li>
-                <li class="blue-bg">
-                    <p>Strategie</p>
-                    <img src="images/strategy.svg" alt="Illustration of a redar.">
-                </li>
-                <li class="green-bg">
-                    <p>Consulting</p>
-                    <img src="images/consulting.svg" alt="Illustration of a lightbulb.">
-                </li>
-            </ul>
+<%= require('./partials/_header.html') %>
+<section id="services">
+    <h2>Leistungen</h2>
+    <ul>
+        <li class="yellow-bg">
+            <p>Design</p>
+            <img src="images/design.svg" alt="Illustration of a brush and a pencil.">
+        </li>
+        <li class="blue-bg">
+            <p>Strategie</p>
+            <img src="images/strategy.svg" alt="Illustration of a redar.">
+        </li>
+        <li class="green-bg">
+            <p>Consulting</p>
+            <img src="images/consulting.svg" alt="Illustration of a lightbulb.">
+        </li>
+    </ul>
+</section>
+<section id="news">
+    <h2>News</h2>
+    <ul>
+        <li><span class="highlight">365 Postkarten</span> - Eine Liebeserklärung für jeden Tag! <a class="highlight"
+                href="#">[mehr erfahren]</a>
+        </li>
+        <li><span class="highlight">Award-Nominierung</span> - Tolle News: ich bin bei der Endauswahl 2018! <a
+                class="highlight" href="#">[mehr
+                erfahren]</a></li>
+        <li><span class="highlight">CMYK erklärt</span> - der neueste <a class="highlight" href="#">Blog</a>-Eintrag! <a
+                class="highlight" href="#">[mehr
+                erfahren]</a></li>
+    </ul>
+</section>
+<section id="references">
+    <h2>Referenzen</h2>
+    <section class="grid-container">
+        <section class="grid-ubuntu">
+            <img src="./images/dina-meyer.jpg" alt="Tina Ubuntu">
+            <cite>Tina Ubuntu, CEO headless Ltd.</cite>
+            <blockquote>
+                <p>Alex' Redesign hat maßgeblich mitgeholfen unseren Umsatz um 20% in die Höhe zu treiben!
+            </blockquote>
         </section>
-        <section id="news">
-            <h2>News</h2>
-            <ul>
-                <li><span class="highlight">365 Postkarten</span> - Eine Liebeserklärung für jeden Tag! <a
-                        class="highlight" href="#">[mehr erfahren]</a>
-                </li>
-                <li><span class="highlight">Award-Nominierung</span> - Tolle News: ich bin bei der Endauswahl 2018! <a
-                        class="highlight" href="#">[mehr
-                        erfahren]</a></li>
-                <li><span class="highlight">CMYK erklärt</span> - der neueste <a class="highlight"
-                        href="#">Blog</a>-Eintrag! <a class="highlight" href="#">[mehr
-                        erfahren]</a></li>
-            </ul>
+        <section class="grid-herzog">
+            <img src="./images/thomas-meyer.jpg" alt="Tom Herzog">
+            <cite>Tom Herzog, <br> Cutter's Finest</cite>
+            <blockquote>
+                <p>Große Webkunst - keine Kunst mit Alex Mayer!</p>
+            </blockquote>
         </section>
-        <section id="references">
-            <h2>Referenzen</h2>
-            <section class="grid-container">
-                <section class="grid-ubuntu">
-                    <img src="./images/dina-meyer.jpg" alt="Tina Ubuntu">
-                    <cite>Tina Ubuntu, CEO headless Ltd.</cite>
-                    <blockquote>
-                        <p>Alex' Redesign hat maßgeblich mitgeholfen unseren Umsatz um 20% in die Höhe zu treiben!
-                    </blockquote>
-                </section>
-                <section class="grid-herzog">
-                    <img src="./images/thomas-meyer.jpg" alt="Tom Herzog">
-                    <cite>Tom Herzog, <br> Cutter's Finest</cite>
-                    <blockquote>
-                        <p>Große Webkunst - keine Kunst mit Alex Mayer!</p>
-                    </blockquote>
-                </section>
-                <section class="grid-mueller">
-                    <div class="quotation">
-                        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="90%" height="100%" viewBox="0 0 275.171 228.521" enable-background="new 0 0 275.171 228.521"
-                            xml:space="preserve">
-                        <path fill="#FFFFFF" d="M21.258,228.521v-18.601c29.818-16.829,49.38-32.108,58.68-45.837c9.301-13.729,13.951-29.604,13.951-47.609
+        <section class="grid-mueller">
+            <div class="quotation">
+                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90%" height="100%"
+                    viewBox="0 0 275.171 228.521" enable-background="new 0 0 275.171 228.521" xml:space="preserve">
+                    <path fill="#FFFFFF" d="M21.258,228.521v-18.601c29.818-16.829,49.38-32.108,58.68-45.837c9.301-13.729,13.951-29.604,13.951-47.609
                             c0-8.269-1.481-14.469-4.429-18.601c-3.252-4.138-6.795-6.2-10.629-6.2c-2.955,0-7.681,1.176-14.172,3.543
                             c-6.498,2.36-12.996,3.543-19.486,3.543c-12.4,0-23.029-4.429-31.887-13.286S0,65.842,0,53.145c0-14.172,5.681-26.572,17.05-37.201
                             C28.413,5.314,42.218,0,58.459,0c19.486,0,37.125,8.415,52.923,25.244c15.791,16.829,23.693,38.087,23.693,63.773
-                            c0,31.001-9.965,59.345-29.894,85.031C85.252,199.735,57.276,217.893,21.258,228.521z"/>
-                        <path fill="#FFFFFF" d="M160.467,228.521v-18.601c25.687-13.286,44.211-27.389,55.58-42.294
+                            c0,31.001-9.965,59.345-29.894,85.031C85.252,199.735,57.276,217.893,21.258,228.521z" />
+                    <path fill="#FFFFFF" d="M160.467,228.521v-18.601c25.687-13.286,44.211-27.389,55.58-42.294
                             c11.363-14.913,17.051-31.077,17.051-48.495c0-10.338-1.481-17.569-4.429-21.701c-2.955-3.84-6.2-5.757-9.743-5.757
                             c-3.84,0-9.01,1.176-15.5,3.543c-6.795,2.36-12.698,3.543-17.715,3.543c-12.11,0-22.663-4.581-31.666-13.729
                             c-9.009-9.148-13.507-20.075-13.507-32.772c0-14.172,5.46-26.42,16.386-36.758C167.844,5.169,181.282,0,197.226,0
                             c20.075,0,38.087,8.636,54.03,25.908c15.943,17.271,23.915,38.46,23.915,63.552c0,29.52-9.819,57.054-29.451,82.596
-                            C226.082,197.59,197.668,216.412,160.467,228.521z"/>
-                    </svg>
-                    </div>
-                    <img src="./images/vorstand.jpg" alt="KR Ernst Akner, Dr. Florian Eisner">
-                    <cite>Vorstand Müller AG <br> KR Ernst Anker, Dr. Florian Eisner</cite>
-                    <blockquote>
-                        <p>Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen übertroffen.</p>
-                    </blockquote>
-                </section>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <div class="max-width-container">
-            <div class="footer-menu">
-                <p>&copy; Alex Mayer 2018</p>
-                <ul>
-                    <li><a href="#">Impressum</a> |</li>
-                    <li><a href="#">Datenschutzerklärung</a></li>
-                </ul>
+                            C226.082,197.59,197.668,216.412,160.467,228.521z" />
+                </svg>
             </div>
-            <p>Demo-Wordpress-Seite im Rahmen der LV 'Content Management Systeme' an der FH Salzburg von Sophie Daringer und
-                Simon Seebacher</p>
-            <p>Alle Inhalte frei erfunden</p>
-            <p>Bildnachweis:</p>
-            <p>Fotos</p>
-            <ul>
-                <li>Herofoto Tastatur: Aman Anderson, https://de.freeimages.com/photo/illuminated-keyboard-1242287</li>
-                <li>Foto Dina Meyer by Dreifachaxel [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)] from
-                    Wikimedia Commons</li>
-                <li>Foto Thomas Meyer-Hermann By Thomas Meyer-Hermann (Thomas Meyer-Hermann) [FGDL
-                    (http://www.gnu.org/copyleft/fdl.html), CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0) or
-                    CC BY-SA 3.0 de (https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)], via Wikimedia Commons
-                    https://upload.wikimedia.org/wikipedia/commons/c/c6/Thomas_Meyer-Hermann_1.jpg</li>
-                <li>Foto Vorstand Sparkasse Ülzen [[File:SKUelzen Vorstand 2015.jpg|SKUelzen Vorstand 2015]]
-                    https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg</li>
-            </ul>
-            <p>Icons</p>
-            <ul>
-                <li>Freepik (http://www.freepik.com) / www.flaticon.com</li>
-            </ul>
-        </div>
-    </footer>
-</body>
-
-</html>
+            <img src="./images/vorstand.jpg" alt="KR Ernst Akner, Dr. Florian Eisner">
+            <cite>Vorstand Müller AG <br> KR Ernst Anker, Dr. Florian Eisner</cite>
+            <blockquote>
+                <p>Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen übertroffen.</p>
+            </blockquote>
+        </section>
+    </section>
+</section>
+<%= require('html-loader!./partials/_footer.html') %>
