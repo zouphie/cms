@@ -6,15 +6,16 @@
     <ul>
         <li class="yellow-bg">
             <p>Design</p>
-            <img src="images/design.svg" alt="Illustration of a brush and a pencil.">
+
+            <img src=<%= require('./images/design.svg') %> alt="Illustration of a brush and a pencil.">
         </li>
         <li class="blue-bg">
             <p>Strategie</p>
-            <img src="images/strategy.svg" alt="Illustration of a redar.">
+            <img src=<%= require('./images/strategy.svg') %> alt="Illustration of a redar.">
         </li>
         <li class="green-bg">
             <p>Consulting</p>
-            <img src="images/consulting.svg" alt="Illustration of a lightbulb.">
+            <img src=<%= require('./images/consulting.svg') %> alt="Illustration of a lightbulb.">
         </li>
     </ul>
 </section>
@@ -36,14 +37,18 @@
     <h2>Referenzen</h2>
     <section class="grid-container">
         <section class="grid-ubuntu">
-            <img src="./images/dina-meyer.jpg" alt="Tina Ubuntu">
+            <div class="img-wrapper">
+                <img src=<%= require('./images/dina-meyer.jpg') %> alt="Tina Ubuntu">
+            </div>
             <cite>Tina Ubuntu, CEO headless Ltd.</cite>
             <blockquote>
                 <p>Alex' Redesign hat maßgeblich mitgeholfen unseren Umsatz um 20% in die Höhe zu treiben!
             </blockquote>
         </section>
         <section class="grid-herzog">
-            <img src="./images/thomas-meyer.jpg" alt="Tom Herzog">
+            <div class="img-wrapper">
+                <img src=<%= require('./images/thomas-meyer.jpg') %> alt="Tom Herzog">
+            </div>
             <cite>Tom Herzog, <br> Cutter's Finest</cite>
             <blockquote>
                 <p>Große Webkunst - keine Kunst mit Alex Mayer!</p>
@@ -67,7 +72,10 @@
                             C226.082,197.59,197.668,216.412,160.467,228.521z" />
                 </svg>
             </div>
-            <img src="./images/vorstand.jpg" alt="KR Ernst Akner, Dr. Florian Eisner">
+            <div class="filler"></div>
+            <div class="img-wrapper">
+                <img src=<%= require('./images/vorstand.jpg') %> alt="KR Ernst Akner, Dr. Florian Eisner">
+            </div>
             <cite>Vorstand Müller AG <br> KR Ernst Anker, Dr. Florian Eisner</cite>
             <blockquote>
                 <p>Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen übertroffen.</p>
