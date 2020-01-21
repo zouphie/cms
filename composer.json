@@ -1,0 +1,22 @@
+{
+    "name": "wpalex",
+    "description": "Alex Meyer website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sophie Daringer",
+            "email": "sdaringer.mmt-b2018@fh-salzburg.ac.at"
+        }
+    ],
+    "repositories": [
+    ],
+
+    "require": {
+        "vlucas/phpdotenv": ">=3.0",
+        "timber/timber": "1.10.*",
+        "drupal-composer/preserve-paths": "0.1.*",
+        "philipnewcomer/acf-unique-id-field": "^2.0"
+    },
+    "extra": {
+    }
+}
